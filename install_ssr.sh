@@ -202,8 +202,8 @@ pre_install(){
         exit 1
     fi
     # Set ShadowsocksR config password
-    echo "Please enter password for ShadowsocksR:"
-    read -p "(Default password: www.1t1.fun):" shadowsockspwd
+    echo "请输入密码"
+    read -p "(默认密码: www.1t1.fun):" shadowsockspwd
     [ -z "${shadowsockspwd}" ] && shadowsockspwd="www.1t1.fun"
     echo
     echo "---------------------------"
@@ -214,8 +214,8 @@ pre_install(){
     while true
     do
     dport=$(shuf -i 9000-19999 -n 1)
-    echo -e "Please enter a port for ShadowsocksR [1-65535]"
-    read -p "(Default port: ${dport}):" shadowsocksport
+    echo -e "请输入端口 [1-65535]"
+    read -p "(默认端口: ${dport}):" shadowsocksport
     [ -z "${shadowsocksport}" ] && shadowsocksport=${dport}
     expr ${shadowsocksport} + 1 &>/dev/null
     if [ $? -eq 0 ]; then
