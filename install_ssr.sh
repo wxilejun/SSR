@@ -10,14 +10,22 @@ export PATH
 #=================================================================#
 
 clear
-echo
-echo "#############################################################"
-echo "# One click Install ShadowsocksR Server                     #"
-echo "# Intro: https://shadowsocks.be/9.html                      #"
-echo "# Author: Teddysun <i@teddysun.com>                         #"
-echo "# Github: https://github.com/shadowsocksr/shadowsocksr      #"
-echo "#############################################################"
-echo
+
+echo -e "\033[32m--------------------\033[0m"
+echo -e "\033[32m--------------------\033[0m"
+
+echo -e "\033[33m喜樂君脚本\033[0m"
+echo -e "\033[34mSSR环境搭建脚本\033[0m"
+echo -e "\033[34m环境centos6.x-7.x\033[0m"
+echo -e "\033[34mQQ480003832\033[0m"
+echo -e "\033[34m博客 www.1t1.fun\033[0m"
+echo -e "\033[34m交流群461909009\033[0m"
+echo -e "\033[34m脚本开源\033[0m"
+
+echo -e "\033[32m--------------------\033[0m"
+echo -e "\033[32m--------------------\033[0m"
+
+read -p "继续(回车) " go;
 
 libsodium_file="libsodium-1.0.17"
 libsodium_url="https://github.com/wxilejun/wxilejun.github.io/raw/master/ssr/Support/libsodium-1.0.17.tar.gz"
